@@ -20,3 +20,18 @@ function printN(nums){
 }   
 
 printN(5)
+
+
+
+
+function factNum(num){
+    //base case
+    if(num === 0 || num === 1){
+        return 1;
+    }
+    //recursive call
+    return num * factNum(num-1)
+}
+const res = factNum(4);
+console.log(res)
+// console.log(factNum(5)); another way 
