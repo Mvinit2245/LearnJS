@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     
+     <div>
+       <button> Item 1 </button>
+       <button> Item 2</button>
+       <button> Item 3</button>
+       <button> Item 4</button>
+       <button> Item 5</button>
+     </div>
+
+
+    <script>
+       // const button = document.querySelector('button');
+        //const div = document.querySelector('div');
+        //const body = document.querySelector('body');
+        
+        // Event Deleagation
+     /*   div.addEventListener('click', function(event){
+           alert(`You have Clicked : ${event.target.innerText}`);
+        }, {capture:true}) */
+
+         // bubbling
+       // button.addEventListener('click', function(event){
+         //  alert('Button is clicked');
+        //})
+     
+        // Capturing
+        //div.addEventListener('click', function(event){
+          // alert('You are clicked');
+        //}, {capture:true})
+
+        //body.addEventListener('click', function(event){
+        //   alert('Body is clicked');
+        //}, {capture:true})
+
+
+        // adding button through JS
+        const newButton = document.createElement('button')
+        newButton.innerText = 'Item 6'
+        const div = document.querySelector('div')
+        div.append(newButton);
+
+
+        div.addEventListener('click', function(event){
+           alert(`You have Clicked : ${event.target.innerText}`);
+        }, {capture:true}) 
+
+        
+    </script>
+</body>
+</html>

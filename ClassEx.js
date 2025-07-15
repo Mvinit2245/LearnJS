@@ -1,5 +1,5 @@
-class College{
-    constructor(name, fees, placement){
+class College {
+    constructor(name, fees, placement) {
         this.name = name;
         this.fees = fees;
         this.placement = placement;
@@ -7,15 +7,15 @@ class College{
 
     }
 
-    admission(){
+    admission() {
         console.log(`Student name is ${this.name} and fees paid ${this.fees} `);
     }
 
-    placed(){
+    placed() {
         console.log(`We have placement ${this.placement} %`);
     }
 }
 
-const student = new College("Vinit", 52000 , 80);
+const student = new College("Vinit", 52000, 80);
 student.admission();
 student.placed();
