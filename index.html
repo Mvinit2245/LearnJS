@@ -21,7 +21,7 @@
         //const div = document.querySelector('div');
         //const body = document.querySelector('body');
         
-        // Event Deleagation
+        // Event Propagation
      /*   div.addEventListener('click', function(event){
            alert(`You have Clicked : ${event.target.innerText}`);
         }, {capture:true}) */
@@ -47,7 +47,7 @@
         const div = document.querySelector('div')
         div.append(newButton);
 
-
+           // event delegation
         div.addEventListener('click', function(event){
            alert(`You have Clicked : ${event.target.innerText}`);
         }, {capture:true}) 

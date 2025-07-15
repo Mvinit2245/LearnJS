@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Inner text property</h1>
+
+    <h2> Example</h2>
+
+    <button id="aimerz" onclick="aim()">
+        Hello <span style="display:none" >Button</span>  
+    </button>
+    <p id="lo"> </p>
+
+    <script>
+        function aim(){
+         // let text =document.getElementById("aimerz").innerText;
+          let text =document.getElementById("aimerz").textContent;
+          document.getElementById("lo").innerHTML= text;  
+        }
+    </script>
+</body>
+</html>
