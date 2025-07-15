@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        h1{
+            color:green;
+        }
+        #result{
+            color:aliceblue
+            font-size 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <h1 id ="h1" style="color: red">
+            Hello Vinit Morankar
+        </h1>
+        <button onclick="aim()"> 
+            Click Here
+        </button>
+        <p id="result">
+            setProperty() method Example
+        </p>
+    </div>
+
+    <script>
+       // let res = document.getElementById("result");
+        //let heading = document.getElementById("h1");
+
+       // function aim(){
+           /* heading.style["background-color"] = "skyblue";
+            heading.style["color"] ="black";
+            res.innerText ="Style is changed " */
+
+
+           
+       // }
+
+       function aim(){
+        var z = document.styleSheets[0].cssRules[2].style;
+            z.setProperty("background-color","yellow");
+
+       }
+    </script>
+</body>
+</html>
